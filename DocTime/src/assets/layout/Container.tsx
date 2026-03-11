@@ -4,12 +4,12 @@ import { Outlet } from "react-router";
 
 export function Container() {
   return (
-    <div className="container">
-      <NavBar />
+    <div className="flex flex-col">
+      <NavBar/>
       <main>
-        <Outlet />
+        <Outlet/>
       </main>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
