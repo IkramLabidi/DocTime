@@ -6,8 +6,7 @@ export function Header() {
       <div className="flex flex-col md:flex-row items-center gap-10">
 
         <div className="space-y-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
-            Your health, <br />
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900">Your health, <br />
             <span className="text-blue-600"> our priority</span>
           </h1>
 
