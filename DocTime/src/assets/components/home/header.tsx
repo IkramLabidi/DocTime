@@ -21,7 +21,7 @@ export function Header() {
               </button>
             </Link>
 
-            <Link to="/medicaments">
+            <Link to="/medications">
               <button className="border border-gray-300 hover:border-blue-600 hover:text-blue-600 text-gray-600 px-6 py-3 rounded-full font-semibold transition-all cursor-pointer">
                 Browse Medicine
               </button>

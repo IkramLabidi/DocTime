@@ -2,7 +2,6 @@ import { FaUserDoctor } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import { Link } from "react-router";
-import { motion } from "motion/react";
 
 
 export function NavBar() {
@@ -30,26 +29,22 @@ export function NavBar() {
         </div>
 
         <div className="flex items-center gap-4">
-            <Link to="/Login"><motion.button 
-                className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:cursor-pointer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}>
-                Login
-            </motion.button></Link>
-            <motion.button 
-                className="px-6 py-3  text-blue-600 border-2 border-blue-600 font-semibold rounded-lg shadow-lg hover:cursor-pointer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}>
-                    Language
-            </motion.button>
+            <Link to="/Login">
+                <button 
+                    className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:cursor-pointer">
+                    Login
+                </button>
+            </Link>
+                <button 
+                    className="px-6 py-3  text-blue-600 border-2 border-blue-600 font-semibold rounded-lg shadow-lg hover:cursor-pointer"
+                    >
+                        Language
+                </button>
             <GiHamburgerMenu className="text-2xl text-blue-600 md:hidden hover:cursor-pointer" onClick={() => setIsOpen(!isOpen)} />
         </div>
 
         {isOpen && (
-            <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
+            <div
                 className="absolute top-25px left-0 w-full bg-white shadow-md md:hidden p-4 flex flex-col gap-4">
                     <Link to="/" className="relative after:absolute after:left-0 after:bottom-0 after:h-2px after:w-0 after:bg-blue-600
                         after:transition-all after:duration-300
@@ -76,7 +71,7 @@ export function NavBar() {
                     hover:after:w-full">
                             About
                     </Link>
-            </motion.div>
+            </div>
         )}
     </nav>
   );

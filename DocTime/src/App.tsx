@@ -17,7 +17,7 @@ export function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path="/doctors" element={<Doctors/>}/>
         <Route path="/blog" element={<Blog/>}/>
-        <Route path="/medicaments" element={<Medicaments/>}/>
+        <Route path="/medications" element={<Medicaments/>}/>
       </Route>
     </Routes>
   )
