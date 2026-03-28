@@ -10,7 +10,7 @@ export function Medicaments() {
 
   const searchMedicine = async (title: string) => {
 
-    const res = await fetch(`https://api.fda.gov/drug/label.json?search=openfda.brand_name:"${title}"&limit=1`
+    const res = await fetch(`https://api.fda.gov/drug/label.json?search=openfda.brand_name:"${encodeURIComponent(title)}"openfda.generic_name":${encodeURIComponent(title)}"&limit=1`
     );
     const info= await res.json();
     if (info.error){
@@ -33,7 +33,7 @@ export function Medicaments() {
         const desc= res.description?.[0] || 
         res.indications_and_usage?.[0] ||
         res.purpose?.[0]||
-        res.information_for_patients?.[0]
+        res.information_for_patients?.[0];
          setDescription(desc);
       }
     } catch(err){
@@ -116,5 +116,3 @@ export function Medicaments() {
     </div>
   );
 }
-
-
