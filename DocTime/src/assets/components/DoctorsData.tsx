@@ -90,9 +90,9 @@ export const doctorsData: Doctor[] = [
   },
   {
     id: 8,
-    name: "Dr. Omar Farooq",
+    name: "Dr. Samar Farooq",
     specialty: "Psychiatry",
-    image: "https://i.pinimg.com/1200x/80/26/d9/8026d9718e9b92b214080941b3bbc6c4.jpg",
+    image: "https://i.pinimg.com/1200x/53/e5/84/53e584066e1704730d36af17e6563998.jpg",
     phone: "+216 71 890 123",
     email: "omar.farooq@doctime.com",
     rating: "4.7",

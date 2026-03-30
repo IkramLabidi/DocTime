@@ -22,7 +22,7 @@ export function Doctors() {
           {doctorsData.map((doctor) => (
             <div key={doctor.id} 
               className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md flex flex-col group">              
-            <div className="relative h-64">
+            <div className="relative h-90">
                 <img src={doctor.image} alt='doctor' className="w-full h-full object-cover"/>
               </div>
 
