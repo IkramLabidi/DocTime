@@ -116,6 +116,15 @@ export function Blog() {
                                     <p className="text-sm text-gray-500 leading-relaxed line-clamp-3">
                                         {item.description}
                                     </p>
+
+                                    <a 
+                                        href={item.url} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center justify-center w-full py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-700 transition-all mt-auto shadow-lg shadow-blue-100/50 active:scale-[0.98] text-center"
+                                    >
+                                        Read Full Article
+                                    </a>
                                 </div>
                             </div>
                         ))}

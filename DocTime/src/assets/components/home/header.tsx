@@ -14,15 +14,15 @@ export function Header() {
             Find the best doctors and book appointments online with ease.
           </p>
 
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4">
             <Link to="/doctors">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition-all cursor-pointer shadow-sm">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-2xl transition-all cursor-pointer shadow-lg shadow-blue-100/50 active:scale-[0.98]">
                 Find a Doctor
               </button>
             </Link>
 
             <Link to="/medications">
-              <button className="border border-gray-300 hover:border-blue-600 hover:text-blue-600 text-gray-600 px-6 py-3 rounded-full font-semibold transition-all cursor-pointer">
+              <button className="bg-white border-2 border-gray-100 hover:border-blue-600 hover:text-blue-600 text-gray-600 px-8 py-4 rounded-2xl font-bold transition-all cursor-pointer shadow-sm active:scale-[0.98]">
                 Browse Medicine
               </button>
             </Link>

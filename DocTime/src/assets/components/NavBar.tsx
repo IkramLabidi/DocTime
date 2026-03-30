@@ -35,11 +35,6 @@ export function NavBar() {
                     Login
                 </button>
             </Link>
-                <button 
-                    className="px-6 py-3  text-blue-600 border-2 border-blue-600 font-semibold rounded-lg shadow-lg hover:cursor-pointer"
-                    >
-                        Language
-                </button>
             <GiHamburgerMenu className="text-2xl text-blue-600 md:hidden hover:cursor-pointer" onClick={() => setIsOpen(!isOpen)} />
         </div>
 
