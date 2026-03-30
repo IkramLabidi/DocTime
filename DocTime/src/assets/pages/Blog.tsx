@@ -8,7 +8,7 @@ export function Blog() {
     const [error, setError] = useState("");
 
     const searchBlog = async (name: string) => {
-        const res = await fetch(`https://newsapi.org/v2/everything?q=${encodeURIComponent(name)}+health&sortBy=relevancy&language=en&pageSize=9&apiKey=00b997b36236440797e4a174a4587444`);
+        const res = await fetch(`https://newsapi.org/v2/top-headlines?q=${encodeURIComponent(name)}+health&sortBy=relevancy&language=en&pageSize=9&apiKey=00b997b36236440797e4a174a4587444`);
         const data = await res.json();
         if (data.status === "error") {
             throw new Error(data.error.message);

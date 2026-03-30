@@ -66,7 +66,7 @@ export function Medicaments() {
             />
             <button
               type="submit"
-              className="absolute right-2 px-8 py-3 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 active:scale-[0.98] transition-all cursor-pointer shadow-lg shadow-blue-100/50"
+              className="absolute right-2 px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 cursor-pointer transition-colors"
             >
               Search
             </button>
